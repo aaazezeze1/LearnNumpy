@@ -202,7 +202,10 @@ z[1,1] = 9
 # Inclusive: The starting index is included in the slice.
 # Exclusive: The ending index is not included in the slice.
 # so 1 is the start and inclusive while 4 is the end and exclusive so its actually index 3
-output[1:4, 1:4] = z
+# output[1:4, 1:4] = z
+# negative 1 can also be used to show z
+output[1:-1, 1:-1] = z
 print(output)
 
 # https://youtu.be/QUT1VHiLmmI?si=TFrOJfZKo7N8Mc5e&t=2006
+# https://numpy.org/doc/2.2/reference/routines.linalg.html
